@@ -1,0 +1,30 @@
+### GET ALL BOOKS
+GET https://gobooks-intensivo-go-bb265zchja-uc.a.run.app/books
+Accept: application/json
+### CREATE BOOK
+POST https://gobooks-intensivo-go-bb265zchja-uc.a.run.app/books
+Content-Type: application/json
+
+{
+    "title": "Machado de Assis - Obra Completa",
+    "author": "Wesley Williams",
+    "genre": "Software Engineering"
+}
+### GET BOOK BY ID
+GET https://gobooks-intensivo-go-bb265zchja-uc.a.run.app/books/1
+Accept: application/application/json
+### UPDATE BOOK BY ID
+PUT http://localhost:8080/books/1
+Content-Type: application/json
+
+{
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "genre": "Software Development"
+}
+### DELETE BOOK
+DELETE https://gobooks-intensivo-go-bb265zchja-uc.a.run.app/books/2
+### SEARCH BOOKS
+GET http://localhost:8080/books/search/full
+### SEARCH BOOKS
+GET http://localhost:8080/books/simulate/4,5,6,7,8
